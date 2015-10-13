@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost/tcc?createDatabaseIfNotExist=true</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">false</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.transaction.auto_close_session">false</property>
+        
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.usuario.Senha" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.usuario.Usuario" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Projeto" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Comentario" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Linguagem" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Plataforma" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Repositorio" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Como_Iniciar" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Comunicacao" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Configurar_Workspace" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Entendendo_Codigo" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Requisito" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Submeter_Mudanca" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Chat_Irc" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Encontrar_Mentor" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Fluxo_Contribuicao" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Lista_Discussao" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Pesquisar_Antes" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Tarefa_Facil" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Feed" />
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.AtividadeMensal"/>
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Contribuinte"/>
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Licenca"/>
+        <mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.Link"/>
+        <!--<mapping class="br.com.utfpr.ajudanovatos.entidades.projeto.NivelAtividade"/>-->
+        
+    </session-factory>
+</hibernate-configuration>
